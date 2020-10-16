@@ -1,0 +1,34 @@
+(--------- variables ---------)
+    VARIABLE test
+
+    1024 test !
+    test
+    ?
+store value 1024, put the address on the stack, print value for debug purpose
+
+    test @
+put the value on the stack
+
+(--------- constants ---------)
+    1024 CONSTANT 1k
+    1k . <cr> 1024
+
+cannot be changed
+
+
+(--------- values ---------)
+    2048 VALUE roomsize
+    roomsize . <cr> 2048
+    2000 TO roomsize
+    roomsize . <cr> 2000
+
+can be changed with TO
+
+
+(--------- reference ---------)
+fetch
+@ ( addr -- x ) 
+
+store
+! ( x addr -- )
+(-----------------------------)

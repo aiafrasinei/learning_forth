@@ -1,0 +1,30 @@
+
+(--------- for ---------)
+    10 0 DO i . cr loop
+
+(--------- while ---------)
+( like a while using the top of stack as flag)
+: print-keycode  begin key dup . 32 = until ;
+
+
+(--------- reference ---------)
+
+(---------- if ---------)
+<flag> IF ... THEN
+<flag> IF ... ELSE ... THEN
+
+(--------- indefinite iteration ---------)
+BEGIN ... <flag> UNTIL
+BEGIN ... <flag> WHILE ... REPEAT
+BEGIN ... AGAIN
+
+(--------- indefinite iteration with two exits ---------)
+BEGIN ... <flag> WHILE .. <flag> UNTIL .. THEN
+
+(--------- definite iteration ---------)
+<n1><n2> DO ... LOOP
+<n1><n2> ?DO ... LOOP
+<n1><n2> DO ... <n3> +LOOP
+<n1><n2> ?DO ... <n3> +LOOP
+
+(-----------------------------)

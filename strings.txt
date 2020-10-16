@@ -1,0 +1,24 @@
+(--------- strings ---------)
+    PAD 
+string scratch pad 
+
+    S" test test"
+stores addr,count on the stack
+
+    type 
+clear stack and print the string
+
+    " test test"
+packed string
+    count
+return string unpacked and size on the stack
+    type
+
+    ." test test" 
+type the string
+
+(--------- reference ---------)
+( addr u -- )
+top of stack - length of string
+below - the address
+(-----------------------------)

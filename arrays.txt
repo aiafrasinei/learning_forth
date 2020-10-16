@@ -1,0 +1,5 @@
+(--------- arrays ---------)
+    CREATE STUFF 100 ALLOT
+    100 BUFFER: STUFF
+2 arrays 100 bytes long
+
